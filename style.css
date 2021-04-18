@@ -3,3 +3,13 @@ h1 {
   text-align: center;
   max-width: 100%;
 }
+
+p, span{
+  color: aliceblue;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
