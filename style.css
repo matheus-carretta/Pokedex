@@ -20,7 +20,6 @@ p, span{
 #showPokemon {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .pokemonCard {
