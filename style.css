@@ -11,3 +11,26 @@ footer {
   position: absolute;
   bottom: 0;
 }
+
+.pokemonImg {
+  width: 300px;
+}
+
+.pokemonText {
+  color: black;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+#showPokemon {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemonCard {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
