@@ -7,12 +7,15 @@ button.addEventListener('click', () => {
 })
 
 async function fetchPokemon(pokemon) {
+  try {
   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
   const data = await response.json();
   const pokeImg = data.sprites.other.dream_world.front_default;
   const pokeName = data.name;
-  console.log(data.types)
-  renderPokemon(pokeImg, pokeName)
+  renderPokemon(pokeImg, pokeName);
+  } catch (error) {
+    alert('Pokémon não encontrado');
+  }
 }
 
 function renderPokemon(image, name) {
